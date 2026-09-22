@@ -125,7 +125,7 @@ svg{display:block}
 .cd{margin-top:8px;text-align:center;color:var(--led);font-family:var(--f-led);font-variant-numeric:tabular-nums}
 .led{display:inline-block;font-weight:900;line-height:.9;text-shadow:0 0 6px rgba(255,194,74,.9),0 0 22px rgba(255,150,40,.55)}
 .cd__days{display:flex;align-items:flex-end;justify-content:center;gap:10px}
-.cd__days .led{font-size:clamp(104px,35cqi,160px);letter-spacing:-.02em}
+.cd__days .led{font-size:clamp(72px,35cqi,160px);letter-spacing:-.02em}
 .cd__lab{position:relative;z-index:5;font:900 17px/1 var(--f-led);text-transform:uppercase;letter-spacing:.1em;color:var(--led-red);text-shadow:0 0 8px rgba(255,74,61,.7)}
 .cd__days .cd__lab{font-size:27px;writing-mode:vertical-rl;transform:rotate(180deg);padding-bottom:14px}
 .cd__hms{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:start;justify-items:center;margin-top:6px}
@@ -162,7 +162,7 @@ svg{display:block}
 .ice .h2{color:var(--ice-ink)}
 .ice .lede{margin-top:10px;max-width:30ch;font-size:16px;font-weight:600}
 .cards{position:relative;margin-top:26px;display:grid;gap:0}
-.card{--rot:-3deg;position:relative;width:88%;border-radius:18px;padding:12px 12px 50px;color:#fff;isolation:isolate;overflow:hidden;clip-path:inset(0 round 18px);transform:perspective(800px) rotateX(calc(var(--my,0) * -14deg)) rotateY(calc(var(--mx,0) * 16deg)) rotate(var(--rot));transition:transform .35s cubic-bezier(.2,.8,.2,1);box-shadow:0 18px 40px rgba(11,31,74,.45);touch-action:pan-y}
+.card{--rot:-3deg;position:relative;width:88%;border-radius:18px;padding:12px 12px 50px;color:#fff;isolation:isolate;overflow:hidden;clip-path:inset(0 round 18px);transform:perspective(800px) rotateX(calc(var(--my,0) * -14deg)) rotateY(calc(var(--mx,0) * 16deg)) rotate(var(--rot));transition:transform .35s cubic-bezier(.2,.8,.2,1);box-shadow:0 18px 40px rgba(11,31,74,.45);touch-action:pan-y pinch-zoom}
 .card--shane{background:linear-gradient(160deg,#2b62ee,var(--metros-deep));border:4px solid #fff}
 .card--ilya{--rot:3.5deg;margin-left:auto;margin-top:-8px;padding-top:44px;padding-bottom:14px;background:linear-gradient(200deg,#2a2a31,var(--raiders) 60%);border:4px solid var(--red)}
 .card__foilwrap{position:absolute;inset:-60%;z-index:3;pointer-events:none;transform:translate3d(calc(var(--mx,0) * 22%),calc(var(--my,0) * 22%),0);mix-blend-mode:color-dodge;opacity:.34}
@@ -257,7 +257,7 @@ svg{display:block}
 .lakehouse{position:relative;z-index:0;margin-top:-22px;background:linear-gradient(#0F2A33,#08181d)}
 .sky{padding-top:86px;background:linear-gradient(#3A0F2E 0,#7a1f4a 20%,#d2493f 48%,#F2B24B 78%,#ffd98a 100%)}
 .quote{position:relative;z-index:3;text-align:center}
-.quote p{font:italic 900 clamp(64px,21cqi,100px)/.8 var(--f-display);text-transform:uppercase;color:#fff;text-shadow:0 3px 0 #7a1f2e,0 6px 0 #3a0a1a,0 0 50px rgba(255,217,138,.6)}
+.quote p{font:italic 900 clamp(44px,21cqi,100px)/.8 var(--f-display);text-transform:uppercase;color:#fff;text-shadow:0 3px 0 #7a1f2e,0 6px 0 #3a0a1a,0 0 50px rgba(255,217,138,.6)}
 .quote cite{display:inline-block;margin-top:14px;padding:3px 12px 4px;background:#2a1406;color:var(--gold);font:700 21px/1.1 var(--f-hand);font-style:normal;transform:rotate(-2deg)}
 .scene{position:relative;margin-top:-6px;margin-bottom:-1px}
 .scene svg{width:100%;height:auto}
@@ -356,7 +356,7 @@ svg{display:block}
         <p class="sr" id="cd-sr"></p>
       </section>
 
-      <p class="when" id="when"><noscript>Activez JavaScript pour lancer le décompte.</noscript></p>
+      <p class="when" id="when"><noscript>Activez JavaScript pour voir le décompte.</noscript></p>
       <p class="hint" aria-hidden="true">Touchez la glace, pour voir.</p>
     </div>
 
@@ -418,7 +418,7 @@ svg{display:block}
           <p class="card__team"><span>Montreal Metros</span><span>Centre · Ottawa</span></p>
           <ul class="stats">
             <li><span class="k">Carburant</span><span class="v">ginger ale. Toujours.</span></li>
-            <li><span class="k">Réputation</span><span class="v">« boring » <em>(contestée)</em></span></li>
+            <li><span class="k">Réputation</span><span class="v">« <span lang="en">boring</span> » <em>(contestée)</em></span></li>
             <li><span class="k">Alias téléphone</span><span class="v"><em>Jane</em></span></li>
             <li><span class="k">Repêchage 2009</span><span class="v">2<sup>e</sup> au total</span></li>
             <li><span class="k">Résidence d’été</span><span class="v">un chalet, un lac, un huard</span></li>
@@ -431,7 +431,7 @@ svg{display:block}
           <div class="card__foilwrap" aria-hidden="true"><div class="card__foil"></div></div>
           <div class="card__glare" aria-hidden="true"></div>
           <div class="card__top">
-            <h3 class="card__name"><small>Ilya · Илья</small>Rozanov</h3>
+            <h3 class="card__name"><small>Ilya · <span lang="ru">Илья</span></small>Rozanov</h3>
             <span class="card__no" aria-hidden="true">81</span>
           </div>
           <svg class="card__art" viewBox="0 0 240 250" role="img" aria-label="Maillot noir numéro 81">
@@ -452,7 +452,7 @@ svg{display:block}
             <li><span class="k">Toujours sur lui</span><span class="v">la croix de sa mère</span></li>
             <li><span class="k">Alias téléphone</span><span class="v"><em>Lily</em></span></li>
             <li><span class="k">Repêchage 2009</span><span class="v">1<sup>er</sup> au total</span></li>
-            <li><span class="k">Ennemi juré</span><span class="v">le huard <em>(« wolf bird »)</em></span></li>
+            <li><span class="k">Ennemi juré</span><span class="v">le huard <em lang="en">(« wolf bird »)</em></span></li>
           </ul>
         </article>
         <span class="boring" aria-hidden="true">Certifié pas boring</span>
@@ -589,8 +589,8 @@ svg{display:block}
           <label><input type="checkbox" id="t0"><span>Revoir la saison 1. Encore.</span></label>
           <label><input type="checkbox" id="t1"><span>Remplir le frigo de ginger ale.</span></label>
           <label><input type="checkbox" id="t2"><span>Réussir un tuna melt digne d’Ilya.</span></label>
-          <label><input type="checkbox" id="t3"><span>Apprendre « Я тебя люблю » par cœur.</span></label>
-          <label><input type="checkbox" id="t4"><span>Écouter « I’ll Believe in Anything » trop fort.</span></label>
+          <label><input type="checkbox" id="t3"><span>Apprendre « <span lang="ru">Я тебя люблю</span> » par cœur.</span></label>
+          <label><input type="checkbox" id="t4"><span>Écouter « <span lang="en">I’ll Believe in Anything</span> » trop fort.</span></label>
           <label><input type="checkbox" id="t5"><span>Bloquer le jour de la sortie. Toute la journée.</span></label>
         </div>
         <p class="plan__score" id="plan-score" aria-live="polite"></p>
@@ -599,7 +599,7 @@ svg{display:block}
       <footer class="foot">
         <button class="share" id="share" type="button">Partager le décompte</button>
         <p class="toast" id="toast" role="status"></p>
-        <p class="sign">Damien &amp; Romain<small>on se retrouve au chalet. Скоро.</small></p>
+        <p class="sign">Damien &amp; Romain<small>on se retrouve au chalet. <span lang="ru">Скоро.</span></small></p>
         <p class="legal">Page de fans non officielle, sans lien avec Crave, HBO Max, Bell Media ni Rachel Reid. Aucune image de la série : tout est dessiné.</p>
       </footer>
     </div>
@@ -717,9 +717,10 @@ svg{display:block}
     var r = $('page').getBoundingClientRect();
     [0, 500, 1000].forEach(function(delay, i){ setTimeout(function(){ burst(r.left + r.width * (.25 + .25 * i), 260, 40); }, delay); });
   }
-  whenLabel(); tick();
-  document.addEventListener('visibilitychange', function(){ if (!document.hidden){ lastMinute = -1; tick(); } });
-  window.addEventListener('pageshow', function(){ lastMinute = -1; tick(); });
+  if (isFinite(TARGET)){ whenLabel(); tick(); }
+  else { ['d','h','m','s'].forEach(function(k){ setText(el[k], '—'); }); el.when.textContent = 'Date à confirmer.'; }
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden && isFinite(TARGET)){ lastMinute = -1; tick(); } });
+  window.addEventListener('pageshow', function(){ if (isFinite(TARGET)){ lastMinute = -1; tick(); } });
 
   /* ---------- Animations seulement à l'écran ---------- */
   var fxMode = 'snow';
@@ -823,8 +824,8 @@ svg{display:block}
   (reduce.addEventListener ? reduce.addEventListener.bind(reduce, 'change') : reduce.addListener.bind(reduce))(function(){ if (reduce.matches) stop(); else start(); });
 
   document.querySelectorAll('[data-burst]').forEach(function(zone){
-    zone.addEventListener('pointerdown', function(e){
-      if (e.target.closest('button,input,label,a,.card')) return;
+    zone.addEventListener('pointerup', function(e){
+      if (!e.isPrimary || e.target.closest('button,input,label,a,.card')) return;
       burst(e.clientX, e.clientY, 22);
     });
   });
@@ -895,7 +896,7 @@ svg{display:block}
   function wail(){
     var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
     try {
-      ac = ac || new AC(); if (ac.state === 'suspended') ac.resume();
+      ac = ac || new AC(); if (ac.state !== 'running') ac.resume();
       var t = ac.currentTime + .02, o = ac.createOscillator(), g = ac.createGain(), l = ac.createOscillator(), lg = ac.createGain(), dl = ac.createDelay(1), fb = ac.createGain();
       o.type = 'sine';
       o.frequency.setValueAtTime(520, t); o.frequency.exponentialRampToValueAtTime(900, t + .38); o.frequency.setValueAtTime(900, t + .95);
@@ -928,7 +929,7 @@ svg{display:block}
   function say(msg){ toast.textContent = msg; clearTimeout(tt); tt = setTimeout(function(){ toast.textContent = ''; }, 3500); }
   $('share').addEventListener('click', function(){
     var data = {title: 'Heated Rivalry S2 · le décompte', text: finished ? 'La saison 2 approche. Direction le chalet.' : 'J-' + el.d.textContent + ' avant la saison 2. Prépare le ginger ale.', url: location.href};
-    if (navigator.share){ navigator.share(data).catch(function(){}); }
+    if (navigator.share){ navigator.share(data).catch(function(e){ if (!e || e.name !== 'AbortError') say('Copiez l’adresse de la page, à l’ancienne.'); }); }
     else if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(location.href).then(function(){ say('Lien copié. Collez-le à qui de droit.'); }, function(){ say('Copiez l’adresse de la page, à l’ancienne.'); }); }
     else say('Copiez l’adresse de la page, à l’ancienne.');
   });
