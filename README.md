@@ -15,7 +15,9 @@ var SORTIE = {
 };
 ```
 
-Mettre l'instant exact de la sortie dans `iso` (avec le décalage horaire), puis passer `estimee` à `false` quand la date officielle est connue.
+Mettre l'instant exact de la sortie dans `iso` (avec le décalage horaire), puis passer `estimee` à `false` quand la date officielle est connue. La date du bandeau lumineux et la ligne « Printemps 2027 » de la liste « Ce qu'on sait » se mettent alors à jour d'elles-mêmes.
+
+L'image de partage (`assets/og.jpg`) mentionne seulement « Saison 2 · le décompte » : rien à changer.
 
 ## Aperçu local
 
